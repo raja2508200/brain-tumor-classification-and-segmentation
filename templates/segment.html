@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Segment</title>
+    <style>
+        body {
+            background-image: url("static/final.jpg");
+            background-size: cover;
+            display: flex;
+            align-items: center; /* Vertically center the content */
+            justify-content: center; /* Horizontally center the content */
+            height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+        .img-container {
+            margin-right: 18px; /* Adjust the margin for spacing */
+        }
+        .img-fluid {
+            width: 400px;
+            height: 500px;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background to make text more readable */
+            padding: 20px;
+        }
+        .button{
+            color:rgb(224, 240, 240);
+            background-color: rgba(0, 2, 2, 0.849);
+            padding: 10px;
+            margin-right: 20%;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="img-container">
+        <h1>Segmented Image</h1>
+        <img src="uploads/imageseg.jpg" alt="Segmented Image" class="img-fluid">
+    </div>
+    <div class="box">
+        <h1>stage: <span style="color: rgb(238, 4, 4);">{{stage}}</span></h1>
+        <a href="upload.html"><button class="button">back</button></a>
+    </div>
+   
+
+</body>
+</html>
